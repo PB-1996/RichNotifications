@@ -18,10 +18,10 @@ class NotificationService: UNNotificationServiceExtension {
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
         if let bestAttemptContent = bestAttemptContent {
-            if let stringUrl = bestAttemptContent.userInfo["gif"] as? String, let url = URL(string: stringUrl) {
-                AttachmentDownloader.downloadAttachment(url: url, extension: "gif", completion: { (path, error) in
+            if let stringUrl = bestAttemptContent.userInfo["mp4"] as? String, let url = URL(string: stringUrl) {
+                AttachmentDownloader.downloadAttachment(url: url, extension: "mp4", completion: { (path, error) in
                     if let path = path {
-                        let attachment = try! UNNotificationAttachment(identifier: "gif", url: path, options: nil)
+                        let attachment = try! UNNotificationAttachment(identifier: "mp4", url: path, options: nil)
                         bestAttemptContent.attachments = [attachment]                        
                     }
                 })
