@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9B990F8203F53E900FEDB4A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B990F7203F53E900FEDB4A /* NotificationService.swift */; };
+		E9B990FC203F53E900FEDB4A /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9B990F5203F53E900FEDB4A /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9B99100203F542700FEDB4A /* AttachmentDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EE37B22030964700689899 /* AttachmentDownloader.swift */; };
 		E9E6B769203081D8008A0CA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6B768203081D8008A0CA1 /* AppDelegate.swift */; };
 		E9E6B76B203081D8008A0CA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6B76A203081D8008A0CA1 /* ViewController.swift */; };
 		E9E6B76E203081D8008A0CA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E6B76C203081D8008A0CA1 /* Main.storyboard */; };
 		E9E6B770203081D8008A0CA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E6B76F203081D8008A0CA1 /* Assets.xcassets */; };
 		E9E6B773203081D8008A0CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E6B771203081D8008A0CA1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9B990FA203F53E900FEDB4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E6B75D203081D8008A0CA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9B990F4203F53E900FEDB4A;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E9EE37B12030934900689899 /* Embed App Extensions */ = {
@@ -21,6 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				E9B990FC203F53E900FEDB4A /* NotificationServiceExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +42,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E9B990F5203F53E900FEDB4A /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B990F7203F53E900FEDB4A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E9B990F9203F53E900FEDB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E6B765203081D8008A0CA1 /* PushTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PushTest.app; path = RichNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E6B768203081D8008A0CA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E6B76A203081D8008A0CA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E9B990F2203F53E900FEDB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9E6B762203081D8008A0CA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,10 +77,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9B990F6203F53E900FEDB4A /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E9B990F7203F53E900FEDB4A /* NotificationService.swift */,
+				E9EE37B22030964700689899 /* AttachmentDownloader.swift */,
+				E9B990F9203F53E900FEDB4A /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		E9E6B75C203081D8008A0CA1 = {
 			isa = PBXGroup;
 			children = (
 				E9E6B767203081D8008A0CA1 /* RichNotifications */,
+				E9B990F6203F53E900FEDB4A /* NotificationServiceExtension */,
 				E9E6B766203081D8008A0CA1 /* Products */,
 				E9E6B77B20308514008A0CA1 /* Frameworks */,
 			);
@@ -66,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E6B765203081D8008A0CA1 /* PushTest.app */,
+				E9B990F5203F53E900FEDB4A /* NotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,7 +111,6 @@
 			children = (
 				E9E6B768203081D8008A0CA1 /* AppDelegate.swift */,
 				E9E6B76A203081D8008A0CA1 /* ViewController.swift */,
-				E9EE37B22030964700689899 /* AttachmentDownloader.swift */,
 				E9E6B76C203081D8008A0CA1 /* Main.storyboard */,
 				E9E6B76F203081D8008A0CA1 /* Assets.xcassets */,
 				E9E6B771203081D8008A0CA1 /* LaunchScreen.storyboard */,
@@ -98,6 +133,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E9B990F4203F53E900FEDB4A /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B990FF203F53E900FEDB4A /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				E9B990F1203F53E900FEDB4A /* Sources */,
+				E9B990F2203F53E900FEDB4A /* Frameworks */,
+				E9B990F3203F53E900FEDB4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = E9B990F5203F53E900FEDB4A /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E9E6B764203081D8008A0CA1 /* RichNotifications */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9E6B777203081D8008A0CA1 /* Build configuration list for PBXNativeTarget "RichNotifications" */;
@@ -110,6 +162,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E9B990FB203F53E900FEDB4A /* PBXTargetDependency */,
 			);
 			name = RichNotifications;
 			productName = PushTest;
@@ -126,6 +179,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = itrex;
 				TargetAttributes = {
+					E9B990F4203F53E900FEDB4A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					E9E6B764203081D8008A0CA1 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -151,11 +208,19 @@
 			projectRoot = "";
 			targets = (
 				E9E6B764203081D8008A0CA1 /* RichNotifications */,
+				E9B990F4203F53E900FEDB4A /* NotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E9B990F3203F53E900FEDB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9E6B763203081D8008A0CA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,6 +234,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E9B990F1203F53E900FEDB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B990F8203F53E900FEDB4A /* NotificationService.swift in Sources */,
+				E9B99100203F542700FEDB4A /* AttachmentDownloader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9E6B761203081D8008A0CA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +253,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9B990FB203F53E900FEDB4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9B990F4203F53E900FEDB4A /* NotificationServiceExtension */;
+			targetProxy = E9B990FA203F53E900FEDB4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E9E6B76C203081D8008A0CA1 /* Main.storyboard */ = {
@@ -200,6 +282,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E9B990FD203F53E900FEDB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 425X5RTN65;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itrex.RichNotifications.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9B990FE203F53E900FEDB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 425X5RTN65;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itrex.RichNotifications.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E9E6B775203081D8008A0CA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -310,6 +422,7 @@
 		E9E6B778203081D8008A0CA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RichNotifications/RichNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +439,7 @@
 		E9E6B779203081D8008A0CA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RichNotifications/RichNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,6 +456,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E9B990FF203F53E900FEDB4A /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B990FD203F53E900FEDB4A /* Debug */,
+				E9B990FE203F53E900FEDB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E9E6B760203081D8008A0CA1 /* Build configuration list for PBXProject "RichNotifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
